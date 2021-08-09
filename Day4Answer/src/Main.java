@@ -1,0 +1,16 @@
+import java.rmi.RemoteException;
+
+import Abstract.BaseCustomerManager;
+import Concorete.NeroCustomerManager;
+import Entities.Customer;
+
+public class Main {
+	public static void main(String[] args) throws NumberFormatException, RemoteException {
+		BaseCustomerManager customermanager=new NeroCustomerManager();//istediðimiz sýnýfa müþteri ekleyebiliriz
+		customermanager.Save(new Customer(1,"engin","demiroð",1994,"02390239"));
+	
+	
+	
+	
+	}
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class CompanyManager extends Company {
+	public void delete(Customer[] customers,CustomerManager customerManager) {
+		System.out.println("please enter the id of you want to delete:");
+		Scanner scanner=new Scanner(System.in);
+		String id=scanner.nextLine();
+		switch (id) {
+		case "1":
+			customers[0]=null;
+			customerManager.Sumbit(customers);
+//			customers[0].setId("deleted");
+//			customers[0].setFirstName("deleted");
+//			customers[0].setLastName("deleted");
+//			customers[0].setDateOfBirth("deleted");
+//			
+			break;
+
+		default:
+			break;
+		}
+	}
+	
+}

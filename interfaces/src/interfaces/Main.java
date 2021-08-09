@@ -1,0 +1,13 @@
+package interfaces;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Logger[] loggers= {new SmsLogger(),new DatabaseLogger()};//iki elemanlý dizi-elemanlar deðiþebilir
+		CustomerManager customerManager=new CustomerManager(loggers);//diziyi gönderdik
+		Customer engin=new Customer(1,"engin","demiroð");
+		customerManager.add(engin);
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package Concorete;
+
+import Abstract.ICustomerService;
+import Entities.Customer;
+
+public class StarbucksCustomerManager  {
+
+
+}

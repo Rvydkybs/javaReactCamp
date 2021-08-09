@@ -1,0 +1,1 @@
+module modüle {exports tr.gov.nvi.tckimlik.WS;requires axis;requires java.naming;requires java.rmi;requires java.xml;requires jaxrpc;}

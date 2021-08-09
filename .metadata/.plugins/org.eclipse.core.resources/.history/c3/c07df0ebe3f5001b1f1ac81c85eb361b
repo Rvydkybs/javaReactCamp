@@ -1,0 +1,22 @@
+public class Customer implements ICustomer {
+	public String firstName;
+	public String lastName;
+	public String id;
+	public String dateOfBirth;
+	
+	public void Customer( String id,String firstName,String lastName,String dateOfBirth) {
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.dateOfBirth=dateOfBirth;
+		this.id=id;
+	}
+	@Override
+	public void add(CustomerManager customerManager) {
+		
+		
+	}
+	
+	
+	
+	
+}

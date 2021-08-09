@@ -1,0 +1,5 @@
+public interface ICustomer {
+
+	
+	void Customer(String id,String firstName,String lastName,String dateOfBirth);
+}

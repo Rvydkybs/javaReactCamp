@@ -1,0 +1,30 @@
+
+public class Starbucks implements Mernis {
+	String firstName;
+	String lastName;
+	String mernisNumber;
+	
+	@Override
+	public void add(Starbucks starbucks, Nero nero) {
+		System.out.println(starbucks.getFirstName()+" "+starbucks.getLastName()+" veri tabanýna eklendi");
+		
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getMernisNumber() {
+		return mernisNumber;
+	}
+	
+	
+
+}

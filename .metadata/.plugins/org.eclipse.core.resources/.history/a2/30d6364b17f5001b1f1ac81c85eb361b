@@ -1,0 +1,11 @@
+
+public class StrabucksManager extends Starbucks {
+	private void setStarbucks(Starbucks[] starbucks) {
+		starbucks[0].setFirstName("engin");
+		
+
+	}
+
+	
+
+}

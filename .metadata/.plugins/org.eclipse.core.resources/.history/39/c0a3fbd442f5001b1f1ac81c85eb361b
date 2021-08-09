@@ -1,0 +1,5 @@
+package Abstract;
+
+public interface ICustomerService {
+//customer sýnýfý olduðu için interfacesini de ekledik
+}

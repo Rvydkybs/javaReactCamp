@@ -1,0 +1,4 @@
+
+public interface ICustomer {
+	public void add(Customer customer);
+}

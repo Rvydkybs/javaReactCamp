@@ -1,0 +1,10 @@
+
+public class Nero implements Coffee{
+
+	@Override
+	public void add() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

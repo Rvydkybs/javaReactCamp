@@ -1,0 +1,10 @@
+public class CustomerManager extends Customer {
+	public void Sumbit(Customer[] customers) {
+	
+		for (Customer customer2 : customers) {
+			System.out.println("kaydedilen oyuncular:\n"+"id:"+customer2.getId()+
+					"\nadý:"+customer2.getFirstName()+"\nsoyadý:"+customer2.getLastName()+"\ndoðum yýlý:"+customer2.getDateOfBirth());
+		}
+		
+	}
+}

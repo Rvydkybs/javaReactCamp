@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Customer customer1=new Customer();
+		Customer customer2=new Customer();
+		Customer customer3=new Customer();
+		Customer[] customers= {customer1,customer2,customer3};//oyuncular
+
+	}
+
+}

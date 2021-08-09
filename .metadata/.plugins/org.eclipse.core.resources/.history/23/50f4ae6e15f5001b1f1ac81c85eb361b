@@ -1,0 +1,10 @@
+
+public class StrabucksManager extends Starbucks implements Coffee{
+
+	@Override
+	public void add(Starbucks starbucks, Nero nero) {
+		
+		
+	}
+ 
+}

@@ -1,0 +1,21 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Customer customer1=new Customer();
+		Customer customer2=new Customer();
+		Customer customer3=new Customer();
+		CustomerManager customerManager=new CustomerManager();
+		
+		customer1.CustomerAdd("1453652","engin", "demiroð" ,"1994" );//oyuncularýn bilgileri
+		customer2.CustomerAdd("3810832","rüveyda", "kayabaþý" ,"1997" );
+		customer3.CustomerAdd("1759640","engin", "dinemis" ,"1999" );
+		
+		Customer[] customers= {customer1,customer2,customer3};//oyuncular
+		customerManager.Sumbit(customers);
+		customerManager.update(customers);
+		CompanyManager companyManager=new CompanyManager();
+		companyManager.delete(customers,customerManager);
+	}
+
+}

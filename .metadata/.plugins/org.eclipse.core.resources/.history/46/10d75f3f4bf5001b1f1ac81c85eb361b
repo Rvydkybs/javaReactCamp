@@ -1,0 +1,17 @@
+package Concorete;
+
+import Abstract.ICustomerCheckService;
+import Abstract.ICustomerService;
+import Entities.Customer;
+
+public class CustomerCheckManager implements ICustomerCheckService {
+
+	@Override
+	public Boolean CheckIfRealPerson(Customer customer) {
+		return true;
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

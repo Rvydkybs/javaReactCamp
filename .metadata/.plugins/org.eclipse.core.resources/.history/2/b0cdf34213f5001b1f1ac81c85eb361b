@@ -1,0 +1,4 @@
+
+public class Nero implements Coffee{
+
+}

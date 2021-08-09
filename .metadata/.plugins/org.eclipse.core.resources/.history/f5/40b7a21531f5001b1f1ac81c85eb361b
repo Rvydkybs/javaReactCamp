@@ -1,0 +1,4 @@
+
+public interface ICustomer {
+void Save(Customer customer);
+}

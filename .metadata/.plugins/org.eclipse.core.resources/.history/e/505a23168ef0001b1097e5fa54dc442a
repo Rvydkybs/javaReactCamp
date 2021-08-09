@@ -1,0 +1,12 @@
+package inheritance2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		CustomerManage customerManage=new CustomerManage();
+		customerManage.add(new DatabaseLogger());//bu kýsmý if else bloklarýyla
+		//yazmak yerine bu eþkilde istediðimiz parametreyi
+		//veririz ve kod daha saðlýklý olur
+	}
+
+}

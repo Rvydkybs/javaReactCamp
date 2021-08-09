@@ -1,0 +1,16 @@
+public class StrabucksManager extends Starbucks {
+	private void setStarbucks(Starbucks[] starbucks) {
+		starbucks[0].setFirstName("engin");
+		starbucks[0].setLastName("demiroð");
+		
+		starbucks[1].setFirstName("rüveyda");
+		starbucks[1].setLastName("kayabaþý");
+		
+		starbucks[2].setFirstName("dinemis");
+		starbucks[2].setLastName("kayabaþý");
+		
+	}
+
+	
+
+}

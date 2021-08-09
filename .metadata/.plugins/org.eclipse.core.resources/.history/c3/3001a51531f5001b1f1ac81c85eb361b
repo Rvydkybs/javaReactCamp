@@ -1,0 +1,10 @@
+import java.sql.Date;
+
+public class Customer {
+public int id;
+public String firstName;
+public String lastName;
+public java.util.Date dateOfBirth;
+public String nationality;
+
+}

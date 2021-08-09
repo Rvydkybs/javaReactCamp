@@ -1,0 +1,37 @@
+package nLayeredDemo.business.concretes;
+
+import java.util.List;
+
+import nLayeredDemo.business.abstracts.ProductService;
+import nLayeredDemo.dataAccess.abstracts.ProductDao;
+import nLayeredDemo.entities.concretes.Product;
+
+public class ProductManager implements ProductService {
+
+	private ProductDao productDao;//gevþek baðýmlýlýk için
+	
+	public ProductManager(ProductDao productDao) {//gevþek baðýmlýlýk için
+		super();
+		this.productDao = productDao;
+	}
+
+	@Override
+	public void add(Product product) {
+		// iþ kodlarý
+		if (product.getCategoryId()==1) {
+			System.out.println("bu kategoride ürün kabul edilmiyor.");
+			return;//bunu okuyunca fonk içinden çýkar
+		}
+		// HibernateProductDao dao=new HibernateProductDao(); 
+		//katý baðýmlýlýk yaptýðý için uygulanmaz!
+		this.productDao.add(product);//artýk hangi productu istersek onu göndeririz
+		
+	}
+
+	@Override
+	public List<Product> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

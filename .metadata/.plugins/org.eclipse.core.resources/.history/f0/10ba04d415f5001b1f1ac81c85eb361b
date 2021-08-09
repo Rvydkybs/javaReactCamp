@@ -1,0 +1,9 @@
+
+public class Starbucks  {
+	String firstName;
+	String lastName;
+	String mernisNumber;
+	
+	
+
+}

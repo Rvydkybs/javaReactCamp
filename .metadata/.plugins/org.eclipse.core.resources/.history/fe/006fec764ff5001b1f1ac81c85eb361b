@@ -1,0 +1,13 @@
+package Abstract;
+
+import Entities.Customer;
+
+public abstract class BaseCustomerManager implements ICustomerService{
+	// bunu implemente ederek artýk base bir sýnýftan iþlem yapabileceðiz
+		@Override
+		public void  Save(Customer customer) {
+			System.out.println("saved to: "+customer.firstName);
+			
+		}
+
+}

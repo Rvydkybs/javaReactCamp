@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class CustomerManager extends Customer {
+	public void Sumbit(Customer[] customers) {
+	System.out.println("kaydedilen oyuncular:\n");
+		for (Customer customer2 : customers) {
+			
+			System.out.println("id:"+customer2.getId()+
+					"\nadý:"+customer2.getFirstName()+"\nsoyadý:"+customer2.getLastName()+"\ndoðum yýlý:"+customer2.getDateOfBirth()+
+					"\n");
+		}
+		
+	}
+	
+	
+	public void update(Customer[] customers) {
+		System.out.println("what do you want to update?(you can only change the person that have the id is 1 !):\n1-name\n"
+				+ "2-lastname\n3-date of birth\n4-id no\n");
+		Scanner scanner= new Scanner(System.in);
+		String result=scanner.nextLine();//kullanýcýnýn gireceði seçenekler
+		
+		switch (result) {
+		case "1": 
+			Scanner scanner1= new Scanner(System.in);
+			String result1=scanner1.nextLine();
+			customers[0].setFirstName(result1);
+			Sumbit(customers);
+			break;
+		case "2":
+			Scanner scanner2= new Scanner(System.in);
+			String result2=scanner2.nextLine();
+			customers[0].setLastName(result2);
+			Sumbit(customers);
+		case "3":
+			Scanner scanner3= new Scanner(System.in);
+			String result3=scanner3.nextLine();
+			customers[0].setDateOfBirth(result3);
+			Sumbit(customers);
+		case "4":
+			Scanner scanner4= new Scanner(System.in);
+			String result4=scanner4.nextLine();
+			customers[0].setId(result4);
+			Sumbit(customers);
+		default:
+			break;
+		}
+	}
+	
+	
+}

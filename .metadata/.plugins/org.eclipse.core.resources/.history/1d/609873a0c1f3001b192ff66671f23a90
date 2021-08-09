@@ -1,0 +1,26 @@
+package interfaces;
+
+public class CustomerManager {
+	private Logger[] loggers;//birden çok loglama iþlemi
+	public CustomerManager(Logger[] loggers) {//cunstructor
+			this.loggers = loggers;
+		}
+	public void add(Customer customer) {
+		
+		System.out.println("müþteri eklendi"+customer.getFirst_name());
+		for (Logger logger : loggers) {
+			logger.log(customer.getFirst_name());
+		}
+		/*
+		 * DatabaseLogger logger=new DatabaseLogger();//katý baðýmlýlýk
+		 * logger.log(customer.getFirst_name()+"veri tabanýna loglandý!");
+		 */
+	}
+	public void delete(Customer customer) {
+		System.out.println("müþteri silindi"+customer.getFirst_name());
+		for (Logger logger : loggers) {
+			logger.log(customer.getFirst_name());
+		}
+	}
+}
+ 

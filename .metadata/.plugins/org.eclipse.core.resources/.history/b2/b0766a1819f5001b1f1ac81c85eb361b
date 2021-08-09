@@ -1,0 +1,35 @@
+
+public class Starbucks implements Mernis {
+	String firstName;
+	String lastName;
+	String[] mernisNumber= {"18794090208","7801902397","081232683"};//müþteri tc'leri
+	
+	
+	@Override
+	public void add(Starbucks[] starbucks) {
+		for (Starbucks starbucks2 : starbucks) {
+			System.out.println(starbucks2.getFirstName()+"\n "+starbucks2.getLastName()+" "
+					+starbucks2.getMernisNumber()+"\n müþterileri veri tabanýna eklendi");
+		}
+		
+		
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String[] getMernisNumber() {//müþteri tc'leri sadece okunabilir
+		return mernisNumber;
+	}
+	
+	
+
+}

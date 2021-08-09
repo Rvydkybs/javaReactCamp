@@ -1,0 +1,6 @@
+
+public class CustomerManager extends Customer {
+	public void addValues( String id,String firstName,String lastName,) {
+		
+	}
+}

@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class CustomerManager extends Customer {
+	public void Sumbit(Customer[] customers) {
+	System.out.println("kaydedilen oyuncular:\n");
+		for (Customer customer2 : customers) {
+			
+			System.out.println("id:"+customer2.getId()+
+					"\nadý:"+customer2.getFirstName()+"\nsoyadý:"+customer2.getLastName()+"\ndoðum yýlý:"+customer2.getDateOfBirth()+
+					"\n");
+		}
+		
+	}
+	
+	
+	public void update(Customer[] customers) {
+		System.out.println("what do you want to update?(you can only change the person that have the id is 1 !):\n1-name\n"
+				+ "2-lastname\n3-date of birth\n4-id no\n");
+		Scanner scanner= new Scanner(System.in);
+		String result=scanner.nextLine();
+		switch (result) {
+		case "1": 
+			
+			break;
+
+		default:
+			break;
+		}
+	}
+}

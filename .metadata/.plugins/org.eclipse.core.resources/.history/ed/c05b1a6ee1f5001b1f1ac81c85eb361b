@@ -1,0 +1,10 @@
+import java.util.Date;
+
+public class CustomerManager extends Customer {
+	public void CustomerManager( String id,String firstName,String lastName,String dateOfBirth) {
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.dateOfBirth=dateOfBirth;
+		this.id=id;
+	}
+}
